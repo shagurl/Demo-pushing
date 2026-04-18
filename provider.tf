@@ -7,7 +7,7 @@ terraform {
   }
 }
 provider "google" {
-  project     = "do-not-delete-444606"
-  zone        = "us-central1-a"
-  region      = "us-central1"
+  project = "do-not-delete-444606"
+  zone    = "us-central1-a"
+  region  = "us-central1"
 }
