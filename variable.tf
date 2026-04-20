@@ -1,7 +1,7 @@
 variable "name" {
   type        = string
   description = "The name of the bucket to create"
-  default     = "cruk_vpc_onedemobucketthree"
+  default     = "cruk_vpc_onedemobucketfive"
 
 }
 
@@ -17,3 +17,5 @@ variable "iam_members" {
   }]
 
 }
+
+
