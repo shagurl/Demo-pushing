@@ -14,6 +14,7 @@ module "vpc" {
         }
     ]
 
+
     secondary_ranges = {
         subnet-01 = [
             {
@@ -22,3 +23,4 @@ module "vpc" {
             }
         ]
     }
+}
