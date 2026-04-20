@@ -8,8 +8,8 @@ module "cloud-storage_simple_bucket" {
   versioning    = true
   iam_members = [
     {
-    role   = var.iam_members[0].role
-    member = "user:${var.iam_members[0].member}"
-  }
+      role   = var.iam_members[0].role
+      member = "user:${var.iam_members[0].member}"
+    }
   ]
 }

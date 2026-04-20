@@ -2,9 +2,9 @@ variable "name" {
   type        = string
   description = "The name of the bucket to create"
   default     = "cruk_vpc_onedemobucket"
- 
+
 }
- 
+
 variable "iam_members" {
   type = list(object({
     role   = string
@@ -15,5 +15,5 @@ variable "iam_members" {
     role   = "roles/storage.admin"
     member = "sharon.devaraj@accenture.com"
   }]
- 
+
 }
