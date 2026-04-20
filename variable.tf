@@ -1,5 +1,19 @@
-variable "network_name" {
-  description = "VPC network name"
+variable "name" {
   type        = string
-  default     = "my-vpc-network"
+  description = "The name of the bucket to create"
+  default     = "cruk_vpc_onedemobucket"
+ 
+}
+ 
+variable "iam_members" {
+  type = list(object({
+    role   = string
+    member = string
+  }))
+  description = "The list of IAM members to grant permissions on the bucket"
+  default = [{
+    role   = "roles/storage.admin"
+    member = "sharon.devaraj@accenture.com"
+  }]
+ 
 }
