@@ -15,16 +15,9 @@ module "cloud-storage_simple_bucket" {
 }
 
 
-resource "google_storage_bucket" "crukbackend" {
-  name = "cruk-bucket-backendtestgithub"
-  location = "US"
-  uniform_bucket_level_access = true
-
-}
-
 terraform {
   backend "gcs" {
-    bucket  = "cruk-bucket-backendtestgithub"
+    bucket  = "cruk_vpc_onedemobucketthree"
     prefix  = "terraform/state"
   }
 }
