@@ -17,7 +17,7 @@ module "cloud-storage_simple_bucket" {
 
 terraform {
   backend "gcs" {
-    bucket  = "cruk_vpc_onedemobucketthree"
-    prefix  = "terraform/state"
+    bucket = "cruk_vpc_onedemobucketthree"
+    prefix = "terraform/state"
   }
 }
