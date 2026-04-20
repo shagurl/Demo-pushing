@@ -1,7 +1,7 @@
 variable "name" {
   type        = string
   description = "The name of the bucket to create"
-  default     = "cruk_vpc_onedemobuckettwo"
+  default     = "cruk_vpc_onedemobucketthree"
 
 }
 
